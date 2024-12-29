@@ -65,7 +65,6 @@ int main() {
     
     pair<int, int> start, end;
     
-    // Input the labyrinth and find the start 'A' and end 'B'
     for (int i = 0; i < n; i++) {
         cin >> labyrinth[i];
         for (int j = 0; j < m; j++) {
@@ -74,7 +73,6 @@ int main() {
         }
     }
     
-    // BFS initialization
     queue<pair<int, int> > q;
     q.push(start);
     visited[start.first][start.second] = true;
@@ -109,8 +107,7 @@ int main() {
     if (found) {
         cout << "YES\n";
         cout << dist[end.first][end.second] << "\n";
-        
-        // Reconstruct the path
+    
         string path;
         pair<int, int> current = end;
         while (current != start) {

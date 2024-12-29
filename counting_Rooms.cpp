@@ -39,7 +39,7 @@
 #include <stdexcept>
 #include <functional>
 #include <type_traits>
-using namespace std;
+// . (floor) or # (wall) , task is to count number of rooms in n x m grid
 using namespace std;
 const int max_num = 2500;
 const int dx[] = {0,1,0,-1};
